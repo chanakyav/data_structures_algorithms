@@ -4,7 +4,6 @@ function numRegions(graph) {
     for (const node in graph) {
         if (depthFirst(node, graph, visited)) count++;
     }
-    console.log(count);
     return count;
 }
 
